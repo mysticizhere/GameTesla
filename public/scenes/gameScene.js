@@ -318,7 +318,7 @@ class GameScene extends Phaser.Scene {
 
   create() {
 
-    const backgroundMusic = this.sound.add('backgroundMusic', { loop: true });
+    const backgroundMusic = this.sound.add('backgroundMusic', { loop: false});
     backgroundMusic.play();
     //Background and platforms
     this.add.image(0, 0, "bg").setScale(1, 1).setOrigin(0, 0);
