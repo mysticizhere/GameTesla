@@ -262,9 +262,6 @@ class finalScene extends Phaser.Scene {
     }
 
     create() {
-        const backgroundMusic = this.sound.add('backgroundMusic', { loop: true });
-    backgroundMusic.play();
-
         //Background and platforms
         this.add.image(0, 0, "bg1").setScale(1, 1).setOrigin(0, 0);
         const platforms = this.physics.add.staticGroup();
