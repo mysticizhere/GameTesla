@@ -12,6 +12,7 @@ class MainMenu extends Phaser.Scene {
     }
 
     create() {
+
         this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(this.sys.game.config.width, this.sys.game.config.height);
 
         let startButton = this.add.text(this.sys.game.config.width / 2, this.sys.game.config.height / 2 - 60, 'Start Game', {
