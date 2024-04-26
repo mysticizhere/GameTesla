@@ -13,10 +13,6 @@ class Ending extends Phaser.Scene {
 
     create() {
 
-
-        const backgroundMusic = this.sound.add('backgroundMusic', { loop: true });
-    backgroundMusic.play();
-
         this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(this.sys.game.config.width, this.sys.game.config.height);
         const { width, height } = this.sys.game.config;
 
